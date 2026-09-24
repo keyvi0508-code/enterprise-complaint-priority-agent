@@ -1,0 +1,21 @@
+# UiPath local state and packaged solutions
+**/.local/
+userProfile/
+*.uis
+*.uipx
+
+# Connections, credentials, and local configuration
+.env
+.env.*
+!.env.example
+**/connections/
+**/connection/
+*credentials*
+*secrets*
+
+# Runtime and editor output
+.idea/
+.vscode/
+*.log
+*.tmp
+~$*
