@@ -1,0 +1,12 @@
+﻿fixture_id,proposed_priority,proposed_complaint_type,rationale,historical_actual_output_available,evidence_status
+Test_Email_1,Low,Discount/Promotion Question,Direct match: valid discount-code question.,No,Proposed annotation created 2026-09-24; not executed
+Test_Email_2,High,Threat of Legal/Regulatory Action,Also matches Repeated Unresolved Complaints; the proposed primary label follows the explicit consumer-protection escalation.,No,Proposed annotation created 2026-09-24; not executed
+Demo_Email_1,Low,Size/Colour/Material Enquiry,Pre-dispatch size advice with no order problem.,No,Proposed annotation created 2026-09-24; not executed
+Demo_Email_2,Low,Washing/Care Instructions,Care-instruction request.,No,Proposed annotation created 2026-09-24; not executed
+Demo_Email_3,Low,Size/Colour/Material Enquiry,Material and lining enquiry.,No,Proposed annotation created 2026-09-24; not executed
+Demo_Email_4,Low,Normal Delivery Enquiry,The sender explicitly states that no delay has occurred.,No,Proposed annotation created 2026-09-24; not executed
+Demo_Email_5,Low,Simple Website/Navigation Issue,Order page does not load; no delivery or payment issue is reported.,No,Proposed annotation created 2026-09-24; not executed
+Demo_Email_6,Medium,Wrong Item Received,Wrong product/colour and size; wrong item is the proposed primary label.,No,Proposed annotation created 2026-09-24; not executed
+Demo_Email_7,Medium,Delayed Delivery,Delivery is five days past the estimate.,No,Proposed annotation created 2026-09-24; not executed
+Demo_Email_8,High,Serious Health/Allergic Reaction,Rash and swelling required medical treatment.,No,Proposed annotation created 2026-09-24; not executed
+Demo_Email_9,High,Unauthorized Payment/Fraud Concern,The highest-priority issue is an unauthorized duplicate charge.,No,Proposed annotation created 2026-09-24; not executed

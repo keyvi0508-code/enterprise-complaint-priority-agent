@@ -1,0 +1,302 @@
+{
+  "ExportedBy": "StudioWeb",
+  "BundleHash": "6Vwurt80fCOXnjSmLayj9BVez25jXN2n34d4wRxM3I",
+  "Version": "1.0.0.0",
+  "JitAssemblyCompilerCommands": [
+    {
+      "ProviderName": "TypedDataTable",
+      "TypedDataTableDto": {
+        "Id": 1,
+        "IdRef": "ForEachRowConnections`1_1",
+        "Hash": "ForEachRowConnections`1_1|DataRow|Fbcv3FP6YIO7trIa8iJ0ruwOIKj6TVOPvouZFVyJ50U|M8QgJnMcDYq2DQeuuBU0Jk546eYbnq2FCcwUoYRi4Ss|HT8aFX0uTakdBZzx1gQ7QazRUYM25L1273kAdp3Xng|bc4de7b5-a924-4945-af10-c0b37df188a4",
+        "DataType": "System.Data.DataTable, System.Data.Common",
+        "Columns": [
+          {
+            "ColumnName": "case_id",
+            "DataType": "System.String, System.Private.CoreLib",
+            "Name": "case_id",
+            "Category": "Simplified"
+          },
+          {
+            "ColumnName": "order_id",
+            "DataType": "System.String, System.Private.CoreLib",
+            "Name": "order_id",
+            "Category": "Simplified"
+          },
+          {
+            "ColumnName": "email_message_id",
+            "DataType": "System.String, System.Private.CoreLib",
+            "Name": "email_message_id",
+            "Category": "Simplified"
+          },
+          {
+            "ColumnName": "received_at",
+            "DataType": "System.String, System.Private.CoreLib",
+            "Name": "received_at",
+            "Category": "Simplified"
+          },
+          {
+            "ColumnName": "sender_name",
+            "DataType": "System.String, System.Private.CoreLib",
+            "Name": "sender_name",
+            "Category": "Simplified"
+          },
+          {
+            "ColumnName": "sender_email",
+            "DataType": "System.String, System.Private.CoreLib",
+            "Name": "sender_email",
+            "Category": "Simplified"
+          },
+          {
+            "ColumnName": "email_subject",
+            "DataType": "System.String, System.Private.CoreLib",
+            "Name": "email_subject",
+            "Category": "Simplified"
+          },
+          {
+            "ColumnName": "email_body",
+            "DataType": "System.String, System.Private.CoreLib",
+            "Name": "email_body",
+            "Category": "Simplified"
+          },
+          {
+            "ColumnName": "has_attachment",
+            "DataType": "System.String, System.Private.CoreLib",
+            "Name": "has_attachment",
+            "Category": "Simplified"
+          },
+          {
+            "ColumnName": "attachment_count",
+            "DataType": "System.String, System.Private.CoreLib",
+            "Name": "attachment_count",
+            "Category": "Simplified"
+          },
+          {
+            "ColumnName": "processing_status",
+            "DataType": "System.String, System.Private.CoreLib",
+            "Name": "processing_status",
+            "Category": "Simplified"
+          }
+        ],
+        "RowExtensionProperties": [
+          {
+            "ColumnName": "SheetsRowIndex",
+            "DataType": "System.Int32, System.Private.CoreLib",
+            "DescriptionKey": "General_RowExtensions_Property_SheetsRowIndex_Description",
+            "Category": "Simplified"
+          }
+        ],
+        "NestedRowExtensionProperties": [
+          {
+            "ParentColumnName": "case_id",
+            "Extension": {
+              "ColumnName": "_Address",
+              "DataType": "System.String, System.Private.CoreLib",
+              "Name": "case_id Address",
+              "DescriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "ParentColumnName": "case_id",
+            "Extension": {
+              "ColumnName": "_ColumnAddress",
+              "DataType": "System.String, System.Private.CoreLib",
+              "Name": "case_id ColumnAddress",
+              "DescriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          },
+          {
+            "ParentColumnName": "order_id",
+            "Extension": {
+              "ColumnName": "_Address",
+              "DataType": "System.String, System.Private.CoreLib",
+              "Name": "order_id Address",
+              "DescriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "ParentColumnName": "order_id",
+            "Extension": {
+              "ColumnName": "_ColumnAddress",
+              "DataType": "System.String, System.Private.CoreLib",
+              "Name": "order_id ColumnAddress",
+              "DescriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          },
+          {
+            "ParentColumnName": "email_message_id",
+            "Extension": {
+              "ColumnName": "_Address",
+              "DataType": "System.String, System.Private.CoreLib",
+              "Name": "email_message_id Address",
+              "DescriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "ParentColumnName": "email_message_id",
+            "Extension": {
+              "ColumnName": "_ColumnAddress",
+              "DataType": "System.String, System.Private.CoreLib",
+              "Name": "email_message_id ColumnAddress",
+              "DescriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          },
+          {
+            "ParentColumnName": "received_at",
+            "Extension": {
+              "ColumnName": "_Address",
+              "DataType": "System.String, System.Private.CoreLib",
+              "Name": "received_at Address",
+              "DescriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "ParentColumnName": "received_at",
+            "Extension": {
+              "ColumnName": "_ColumnAddress",
+              "DataType": "System.String, System.Private.CoreLib",
+              "Name": "received_at ColumnAddress",
+              "DescriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          },
+          {
+            "ParentColumnName": "sender_name",
+            "Extension": {
+              "ColumnName": "_Address",
+              "DataType": "System.String, System.Private.CoreLib",
+              "Name": "sender_name Address",
+              "DescriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "ParentColumnName": "sender_name",
+            "Extension": {
+              "ColumnName": "_ColumnAddress",
+              "DataType": "System.String, System.Private.CoreLib",
+              "Name": "sender_name ColumnAddress",
+              "DescriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          },
+          {
+            "ParentColumnName": "sender_email",
+            "Extension": {
+              "ColumnName": "_Address",
+              "DataType": "System.String, System.Private.CoreLib",
+              "Name": "sender_email Address",
+              "DescriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "ParentColumnName": "sender_email",
+            "Extension": {
+              "ColumnName": "_ColumnAddress",
+              "DataType": "System.String, System.Private.CoreLib",
+              "Name": "sender_email ColumnAddress",
+              "DescriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          },
+          {
+            "ParentColumnName": "email_subject",
+            "Extension": {
+              "ColumnName": "_Address",
+              "DataType": "System.String, System.Private.CoreLib",
+              "Name": "email_subject Address",
+              "DescriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "ParentColumnName": "email_subject",
+            "Extension": {
+              "ColumnName": "_ColumnAddress",
+              "DataType": "System.String, System.Private.CoreLib",
+              "Name": "email_subject ColumnAddress",
+              "DescriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          },
+          {
+            "ParentColumnName": "email_body",
+            "Extension": {
+              "ColumnName": "_Address",
+              "DataType": "System.String, System.Private.CoreLib",
+              "Name": "email_body Address",
+              "DescriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "ParentColumnName": "email_body",
+            "Extension": {
+              "ColumnName": "_ColumnAddress",
+              "DataType": "System.String, System.Private.CoreLib",
+              "Name": "email_body ColumnAddress",
+              "DescriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          },
+          {
+            "ParentColumnName": "has_attachment",
+            "Extension": {
+              "ColumnName": "_Address",
+              "DataType": "System.String, System.Private.CoreLib",
+              "Name": "has_attachment Address",
+              "DescriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "ParentColumnName": "has_attachment",
+            "Extension": {
+              "ColumnName": "_ColumnAddress",
+              "DataType": "System.String, System.Private.CoreLib",
+              "Name": "has_attachment ColumnAddress",
+              "DescriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          },
+          {
+            "ParentColumnName": "attachment_count",
+            "Extension": {
+              "ColumnName": "_Address",
+              "DataType": "System.String, System.Private.CoreLib",
+              "Name": "attachment_count Address",
+              "DescriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "ParentColumnName": "attachment_count",
+            "Extension": {
+              "ColumnName": "_ColumnAddress",
+              "DataType": "System.String, System.Private.CoreLib",
+              "Name": "attachment_count ColumnAddress",
+              "DescriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          },
+          {
+            "ParentColumnName": "processing_status",
+            "Extension": {
+              "ColumnName": "_Address",
+              "DataType": "System.String, System.Private.CoreLib",
+              "Name": "processing_status Address",
+              "DescriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "ParentColumnName": "processing_status",
+            "Extension": {
+              "ColumnName": "_ColumnAddress",
+              "DataType": "System.String, System.Private.CoreLib",
+              "Name": "processing_status ColumnAddress",
+              "DescriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          }
+        ],
+        "ResourceManager": {
+          "ResourceManagerName": "UiPath.GSuite.Properties.UiPath.GSuite",
+          "ResourceManagerAssemblyName": "UiPath.GSuite"
+        },
+        "Namespace": "System.Data"
+      },
+      "EntityAssemblyKey": {
+        "Name": "Studio.Generated.TypedDataRow1",
+        "Hash": "ForEachRowConnections`1_1|DataRow|Fbcv3FP6YIO7trIa8iJ0ruwOIKj6TVOPvouZFVyJ50U|M8QgJnMcDYq2DQeuuBU0Jk546eYbnq2FCcwUoYRi4Ss|HT8aFX0uTakdBZzx1gQ7QazRUYM25L1273kAdp3Xng|bc4de7b5-a924-4945-af10-c0b37df188a4",
+        "AssemblyName": "Studio.Generated.TypedDataRow1"
+      }
+    }
+  ]
+}

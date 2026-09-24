@@ -1,0 +1,248 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main"
+ xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
+ xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
+ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib"
+ xmlns:sd="clr-namespace:System.Data;assembly=Studio.Generated.TypedDataRow1"
+ xmlns:uasj="clr-namespace:UiPath.Activities.System.Jobs;assembly=UiPath.System.Activities"
+ xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities"
+ xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities"
+ xmlns:ugam="clr-namespace:UiPath.GSuite.Activities.Models;assembly=UiPath.GSuite.Activities"
+ xmlns:ugase="clr-namespace:UiPath.GSuite.Activities.Sheets.Enums;assembly=UiPath.GSuite.Activities"
+ xmlns:ugsc="clr-namespace:UiPath.GSuite.Sheets.Contracts;assembly=UiPath.GSuite"
+ xmlns:ugsm="clr-namespace:UiPath.GSuite.Sheets.Models;assembly=UiPath.GSuite"
+ xmlns:ugsmc="clr-namespace:UiPath.GSuite.Sheets.Models.Columns;assembly=UiPath.GSuite"
+ xmlns:ui="http://schemas.uipath.com/workflow/activities"
+ xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="39">
+      <x:String>UiPath.ConnectionClient.Contracts</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>UiPath.GSuite.Activities.Drive.Enums</x:String>
+      <x:String>System</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.GSuite.Drive.Models</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.GSuite.Activities.Models</x:String>
+      <x:String>UiPath.GSuite.Activities.Sheets.Enums</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>UiPath.GSuite.Sheets.Contracts</x:String>
+      <x:String>UiPath.GSuite.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Activities.System.Jobs</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>Microsoft.Rest</x:String>
+      <x:String>UiPath.Orchestrator.Client.Models</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
+      <x:String>UiPath.GSuite.Sheets.Enums</x:String>
+      <x:String>UiPath.GSuite.Sheets.Models</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="31">
+      <AssemblyReference>Studio.Generated.TypedDataRow1</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Net.Primitives</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>Microsoft.Rest.ClientRuntime</AssemblyReference>
+      <AssemblyReference>System.Net.Http</AssemblyReference>
+      <AssemblyReference>UiPath.OrchestratorClient</AssemblyReference>
+      <AssemblyReference>System.Reflection.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.ReaderWriter</AssemblyReference>
+      <AssemblyReference>System.Xml.XmlSerializer</AssemblyReference>
+      <AssemblyReference>ConnectionClient</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="356,732" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="agent_priority_level" />
+      <Variable x:TypeArguments="x:String" Name="agent_complaint_type" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ManualTrigger Result="{x:Null}" DisplayName="Manual Trigger" sap2010:WorkflowViewState.IdRef="ManualTrigger_1" />
+    <uga:ForEachRowConnections x:TypeArguments="sd:DataRow1" ConnectionAccountName="{x:Null}" Length="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="complaint_email" BrowserItemId="https://docs.google.com/spreadsheets/d/REPLACE_WITH_SPREADSHEET_ID/edit" ConnectionId="00000000-0000-0000-0000-000000000000" CurrentItemVariableName="CurrentRow" DisplayName="For Each Row in Spreadsheet" EmptyRowAction="Skip" HasHeaders="True" sap2010:WorkflowViewState.IdRef="ForEachRowConnections`1_1" ItemSelectionMode="Browse" Range="'Pending_Agent'" ReadAs="Values" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False">
+      <uga:ForEachRowConnections.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow1, x:Int32">
+          <ActivityAction.Argument1>
+            <DelegateInArgument x:TypeArguments="sd:DataRow1" Name="CurrentRow" />
+          </ActivityAction.Argument1>
+          <ActivityAction.Argument2>
+            <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentRowIndex" />
+          </ActivityAction.Argument2>
+          <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <uasj:RunJob DisplayName="Run Agent: Customer Complaint Priority Agent" sap2010:WorkflowViewState.IdRef="RunJob_1" ProcessName="Customer Complaint Priority Agent">
+              <uasj:RunJob.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="case_id">[string.Format("{0}", CurrentRow.case_id)]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="email_subject">[string.Format("{0}", CurrentRow.email_subject)]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="email_body">[string.Format("{0}", CurrentRow.email_body)]</InArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="priority_level">[agent_priority_level]</OutArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="complaint_type">[agent_complaint_type]</OutArgument>
+              </uasj:RunJob.Arguments>
+            </uasj:RunJob>
+            <uga:WriteRowConnections ArrayRow="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" DataRow="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="complaint_email" BrowserItemId="https://docs.google.com/spreadsheets/d/REPLACE_WITH_SPREADSHEET_ID/edit" ConnectionId="00000000-0000-0000-0000-000000000000" DataType="IndividualFields" DisplayName="Write Row" HasHeaders="True" sap2010:WorkflowViewState.IdRef="WriteRowConnections_1" ItemSelectionMode="Browse" Range="'Priority_Table'" RowPosition="0" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False" WriteMode="Append">
+              <uga:WriteRowConnections.AllFields>
+                <x:Array Type="ugsc:IRangeField">
+                  <ugsmc:RangeColumn DisplayName="case_id" Guid="3046d09e-3bf7-4564-8a55-aa5c53697b4d" Name="case_id">
+                    <ugsmc:RangeColumn.Sample>
+                      <ugsmc:CellDetail TypeFormat="{x:Null}" Value="{x:Null}" Type="Object" />
+                    </ugsmc:RangeColumn.Sample>
+                  </ugsmc:RangeColumn>
+                  <ugsmc:RangeColumn DisplayName="priority_level" Guid="22fa9259-a724-4149-a103-9fbac142fae5" Name="priority_level">
+                    <ugsmc:RangeColumn.Sample>
+                      <ugsmc:CellDetail TypeFormat="{x:Null}" Value="{x:Null}" Type="Object" />
+                    </ugsmc:RangeColumn.Sample>
+                  </ugsmc:RangeColumn>
+                  <ugsmc:RangeColumn DisplayName="complaint_type" Guid="8fe75ede-0c39-4c11-bd03-42a2eb241d6f" Name="complaint_type">
+                    <ugsmc:RangeColumn.Sample>
+                      <ugsmc:CellDetail TypeFormat="{x:Null}" Value="{x:Null}" Type="Object" />
+                    </ugsmc:RangeColumn.Sample>
+                  </ugsmc:RangeColumn>
+                </x:Array>
+              </uga:WriteRowConnections.AllFields>
+              <uga:WriteRowConnections.FileIdBackup>
+                <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID1" StoredValue="Browse">
+                  <usau:BackupSlot.BackupValues>
+                    <scg:Dictionary x:TypeArguments="ugade:EDriveItemMode, scg:List(x:Object)" />
+                  </usau:BackupSlot.BackupValues>
+                </usau:BackupSlot>
+              </uga:WriteRowConnections.FileIdBackup>
+              <uga:WriteRowConnections.InputDataTypeBackup>
+                <usau:BackupSlot x:TypeArguments="ugase:InputDataType" StoredValue="IndividualFields">
+                  <usau:BackupSlot.BackupValues>
+                    <scg:List x:TypeArguments="x:Object" x:Key="DataRow" Capacity="1">
+                      <x:Null />
+                    </scg:List>
+                  </usau:BackupSlot.BackupValues>
+                </usau:BackupSlot>
+              </uga:WriteRowConnections.InputDataTypeBackup>
+              <uga:WriteRowConnections.Item>
+                <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID1}" ConnectionDescriptor="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://docs.google.com/spreadsheets/d/REPLACE_WITH_SPREADSHEET_ID/edit" ConnectionKey="00000000-0000-0000-0000-000000000000" FriendlyName="complaint_email" FullPathHint="CONFIGURE_IN_UIPATH_STUDIO" InputMode="Browse">
+                  <ugam:DriveItemArgument.DriveId>
+                    <InArgument x:TypeArguments="x:String" />
+                  </ugam:DriveItemArgument.DriveId>
+                  <ugam:DriveItemArgument.ParentIdFullPathHint>
+                    <InArgument x:TypeArguments="x:String">
+                      <Literal x:TypeArguments="x:String" Value="" />
+                    </InArgument>
+                  </ugam:DriveItemArgument.ParentIdFullPathHint>
+                </ugam:DriveItemArgument>
+              </uga:WriteRowConnections.Item>
+              <uga:WriteRowConnections.RangeWriteModeBackup>
+                <usau:BackupSlot x:TypeArguments="ugase:RangeWriteMode" StoredValue="Append">
+                  <usau:BackupSlot.BackupValues>
+                    <scg:Dictionary x:TypeArguments="ugase:RangeWriteMode, scg:List(x:Object)" />
+                  </usau:BackupSlot.BackupValues>
+                </usau:BackupSlot>
+              </uga:WriteRowConnections.RangeWriteModeBackup>
+              <uga:WriteRowConnections.State>
+                <uga:ActivityState>
+                  <uga:ActivityState.SelectedFields>
+                    <scg:List x:TypeArguments="uga:DynamicField" Capacity="3">
+                      <uga:DynamicField Id="3046d09e-3bf7-4564-8a55-aa5c53697b4d" Name="dynamicField_AddRangeProperty_20">
+                        <uga:DynamicField.ArgumentValue>
+                          <InArgument x:TypeArguments="x:Object">[string.Format("{0}", CurrentRow.case_id)]</InArgument>
+                        </uga:DynamicField.ArgumentValue>
+                      </uga:DynamicField>
+                      <uga:DynamicField Id="22fa9259-a724-4149-a103-9fbac142fae5" Name="dynamicField_AddRangeProperty_21">
+                        <uga:DynamicField.ArgumentValue>
+                          <InArgument x:TypeArguments="x:Object">[string.Format("{0}", agent_priority_level)]</InArgument>
+                        </uga:DynamicField.ArgumentValue>
+                      </uga:DynamicField>
+                      <uga:DynamicField Id="8fe75ede-0c39-4c11-bd03-42a2eb241d6f" Name="dynamicField_AddRangeProperty_22">
+                        <uga:DynamicField.ArgumentValue>
+                          <InArgument x:TypeArguments="x:Object">[string.Format("{0}", agent_complaint_type)]</InArgument>
+                        </uga:DynamicField.ArgumentValue>
+                      </uga:DynamicField>
+                    </scg:List>
+                  </uga:ActivityState.SelectedFields>
+                </uga:ActivityState>
+              </uga:WriteRowConnections.State>
+            </uga:WriteRowConnections>
+          </Sequence>
+        </ActivityAction>
+      </uga:ForEachRowConnections.Body>
+      <uga:ForEachRowConnections.ColumnNames>
+        <x:Array Type="x:String">
+          <x:String>case_id</x:String>
+          <x:String>order_id</x:String>
+          <x:String>email_message_id</x:String>
+          <x:String>received_at</x:String>
+          <x:String>sender_name</x:String>
+          <x:String>sender_email</x:String>
+          <x:String>email_subject</x:String>
+          <x:String>email_body</x:String>
+          <x:String>has_attachment</x:String>
+          <x:String>attachment_count</x:String>
+          <x:String>processing_status</x:String>
+        </x:Array>
+      </uga:ForEachRowConnections.ColumnNames>
+      <uga:ForEachRowConnections.FileIdBackup>
+        <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID0" StoredValue="Browse">
+          <usau:BackupSlot.BackupValues>
+            <scg:Dictionary x:TypeArguments="ugade:EDriveItemMode, scg:List(x:Object)" />
+          </usau:BackupSlot.BackupValues>
+        </usau:BackupSlot>
+      </uga:ForEachRowConnections.FileIdBackup>
+      <uga:ForEachRowConnections.Item>
+        <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID0}" ConnectionDescriptor="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://docs.google.com/spreadsheets/d/REPLACE_WITH_SPREADSHEET_ID/edit" ConnectionKey="00000000-0000-0000-0000-000000000000" FriendlyName="complaint_email" FullPathHint="CONFIGURE_IN_UIPATH_STUDIO" InputMode="Browse">
+          <ugam:DriveItemArgument.DriveId>
+            <InArgument x:TypeArguments="x:String" />
+          </ugam:DriveItemArgument.DriveId>
+          <ugam:DriveItemArgument.ParentIdFullPathHint>
+            <InArgument x:TypeArguments="x:String">
+              <Literal x:TypeArguments="x:String" Value="" />
+            </InArgument>
+          </ugam:DriveItemArgument.ParentIdFullPathHint>
+        </ugam:DriveItemArgument>
+      </uga:ForEachRowConnections.Item>
+      <uga:ForEachRowConnections.RangeMetadata>
+        <ugsm:RangeMetadataSlim ColumnStart="1" RangeType="Range" />
+      </uga:ForEachRowConnections.RangeMetadata>
+    </uga:ForEachRowConnections>
+  </Sequence>
+</Activity>

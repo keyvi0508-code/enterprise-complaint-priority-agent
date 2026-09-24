@@ -1,0 +1,42 @@
+{
+  "fileName": "evaluation-set-default.json",
+  "id": "b05239b8-054e-4928-b15e-22a933bd0daa",
+  "name": "Default Evaluation Set",
+  "batchSize": 10,
+  "timeoutMinutes": 20,
+  "evaluatorRefs": [
+    "c0e9c8e7-cff5-46f2-b7cd-139ab2096631"
+  ],
+  "evaluations": [
+    {
+      "id": "bac77c05-dbf9-41df-adff-13202f9c93c3",
+      "name": "Debug Run 2026/8/29 00:28:04",
+      "inputs": {
+        "case_id": "CMP-20260828154359760",
+        "email_subject": "How should I wash this wool sweater?",
+        "email_body": "Hi,  I recently received the wool sweater from Order #FSH-30001.  Could you please tell me whether it can be machine washed, or whether it should be hand washed or dry cleaned?  Thank you, Sample Customer"
+      },
+      "expectedOutput": {
+        "case_id": "CMP-20260828154359760",
+        "priority_level": "Low",
+        "complaint_type": "Washing/Care Instructions"
+      },
+      "expectedAgentBehavior": "",
+      "simulationInstructions": "",
+      "simulateInput": false,
+      "inputGenerationInstructions": "",
+      "simulateTools": false,
+      "evalSetId": "b05239b8-054e-4928-b15e-22a933bd0daa",
+      "createdAt": "2026-08-28T16:28:04.789Z",
+      "updatedAt": "2026-08-28T16:28:04.789Z",
+      "source": "firstSuccessfulRun"
+    }
+  ],
+  "modelSettings": [],
+  "agentMemoryEnabled": false,
+  "agentMemorySettings": [],
+  "lineByLineEvaluation": false,
+  "createdAt": "2026-08-28T14:54:29.044Z",
+  "updatedAt": "2026-08-28T16:28:04.789Z",
+  "category": 1
+}

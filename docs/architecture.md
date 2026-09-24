@@ -60,4 +60,3 @@ The supplied package does not contain implementation evidence for mailbox ingest
 ## Public-copy redactions
 
 The original package contained a personal connection name, a Google Sheets URL, a connection identifier, a workspace path, and deployment project IDs. The public workflow keeps the source structure but replaces those environment-specific values. The original `.uis` package, connector resource, `userProfile`, and `.local` settings are not included.
-
